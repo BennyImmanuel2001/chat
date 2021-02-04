@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./css.css" rel="stylesheet">
+    <!-- <link href="./csss.scss" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script defer src='./chat.js'></script>
+    <!-- <script defer src='./mic.js'></script> -->
+    <!-- <script defer src='./image.js'></script> -->
+</head>
+
+<body style="display: flex;flex-direction: row;">
+<p id="p"></p>
+
+    <!-- <div id="login_div">
+        <input type="text" id="User_name" />
+        <button id="user_btn">Enter room</button>
+    </div> -->
+
+    <!-- <div id="application"> -->
+        <div class="contacts_container app_page_contact">
+            <!-- <div class="contact">xghnjdstghjfgjfghj</div> -->
+            <!-- <div class="contact">dghjdfhj</div>
+            <div class="contact">dhjgdjhgjfhjghjfghjhgjhhjhjhjhjhjj</div>
+            <div class="contact">dhjdghjfghjk</div> -->
+            <!-- <select class="options">
+            <option value="room1">room1</option>
+            <option value="room2">room2</option>
+            <option value="room3">room3</option>
+            <option value="room4">room4</option>
+        </select>
+        <input type="text" id="txt"/>
+        <br>
+        <button id="room_selector">OK</button> -->
+        </div>
+
+
+
+        <div style="height: 100%;width: 100%;" class='chat_div app_page_msg'>
+            <div class=' flex_column'>
+                <div class=" width_200 height_80 center table_container greycolor">
+                    <table class="main_div" id="contain">
+
+                    </table>
+                </div>
+
+                <div class="app_console flex">
+
+                    <input type="text" style="border-radius: 10px;" id="msgContainer" />
+                    <!-- <button id="mic" class="not_recording"><img class="recording"  src="./mic.png"/></button> -->
+                    <button id="mic" class="not_recording"><img src="./images/mic.png" /></button>
+                    <label class="file_input">
+                        <img src="./images/attach.png" />
+                        <input type="file" id="image_sender" accept="image/x-png,image/gif,image/jpeg" />
+                    </label>
+                    <button id="enter">Send</button>
+                    <!-- <button id="image_sender">img</button> -->
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+
+
+</html>
